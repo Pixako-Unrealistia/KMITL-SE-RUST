@@ -1,0 +1,5 @@
+Vectors - Performance and Timing
+Array 20000 elements total 429200 ns mean 21.46 ns/elem
+Start Instant { tv_sec: 2827, tv_nsec: 115112800 }
+Start Instant { tv_sec: 2827, tv_nsec: 115112800 } Time to initialize array 981200.0
+Vector 20000 elements total 981200 ns mean 49.06 ns/elem
