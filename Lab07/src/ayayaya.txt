@@ -1,0 +1,50 @@
+[?25l[J[J[J[J[J[J[?25h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;29r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[29;1HE325: ATTENTION
+Found a swap file by the name ".main.rs.swp"
+[10Cowned by: pix   dated: Tue Sep 20 17:49:22 2022
+[9Cfile name: ~pix/SE_rust/Lab07/src/main.rs
+[10Cmodified: no
+[9Cuser name: pix   host name: A12221
+[8Cprocess ID: 3783 (STILL RUNNING)
+While opening file "main.rs"
+[13Cdated: Tue Sep 20 17:46:43 2022
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r main.rs"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file ".main.rs.swp"
+    to avoid this message.
+
+Swap file ".main.rs.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort:[?25h[29;1H[K[29;1H
+[?25l[28;1HW10: Warning: Changing a readonly file
+Interrupt: Press ENTER or type command to continue[?25h[1;1H[L[?25l[2;1H[94m~                                                                                                                        [3;1H~                                                                                                                        [4;1H~                                                                                                                        [5;1H~                                                                                                                        [6;1H~                                                                                                                        [7;1H~                                                                                                                        [8;1H~                                                                                                                        [9;1H~                                                                                                                        [10;1H~                                                                                                                        [11;1H~                                                                                                                        [12;1H~                                                                                                                        [13;1H~                                                                                                                        [14;1H~                                                                                                                        [15;1H~                                                                                                                        [16;1H~                                                                                                                        [17;1H~                                                                                                                        [18;1H~                                                                                                                        [19;1H~                                                                                                                        [20;1H~                                                                                                                        [21;1H~                                                                                                                        [22;1H~                                                                                                                        [23;1H~                                                                                                                        [24;1H~                                                                                                                        [25;1H~                                                                                                                        [26;1H~                                                                                                                        [27;1H~                                                                                                                        [28;1H~                                                                                                                        [m[29;1H[K[1;1H[?25h[?2004l[>4;m[?25ls[?25h[?25ld[?25h[?25lc[?25h[?25lp[?25h[?25ln[?25h[?25lp[?25h[?25l[[?25h[?25lk[?25h[?2004h[>4;2m[?25l[29;1H[97m[41mE78: Unknown mark[1;8H[?25h[?2004l[>4;m[mk[?25ls[?25h[?25ld[?25h[?25l[2;1H[K[2;1H[?25h[?25ls[?25h[?25la[?25h[?25ld[?25h[?25l[3;1H[K[3;1H[?25h[?25ls[?25h[?25ld[?25h[?25l[4;1H[K[4;1H[?25h[?25ld[?25h[?25la[?25h[?25ls[?25h[?25l[5;1H[K[5;1H[?25h[?25ls[?25h[?25la[?25h[?25ld[?25h[?25l[6;1H[K[6;1H[?25h[?25l[7;1H[K[7;1H[?25h[?25l[8;1H[K[8;1H[?25h[?25l[9;1H[K[9;1H[?25h[?2004h[>4;2m[?25l[29;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[9;1H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[29;1H[K[29;1H:[?25hwqe[?25l[97m[41mE492: Not an editor command: wqe[9;1H[?25h[?25l[m[29;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[9;1H[?25h[29;1H
+[?2004l[?1l>[>4;m[?1049l[23;0;0t[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?12h[?12l[27m[23m[29m[m[H[2J[?25l[1;1Hsdcpnp[ksd
+sad
+sd
+das
+sad[10;1H[94m~                                                                                                                        [11;1H~                                                                                                                        [12;1H~                                                                                                                        [13;1H~                                                                                                                        [14;1H~                                                                                                                        [15;1H~                                                                                                                        [16;1H~                                                                                                                        [17;1H~                                                                                                                        [18;1H~                                                                                                                        [19;1H~                                                                                                                        [20;1H~                                                                                                                        [21;1H~                                                                            [?12h[?12l[27m[23m[29m[m[H[2J[?25l[2;5H[34m//ex14
+[m    [34m//No.[5;5H//ex15[m
+    [38;5;130mlet[m name [38;5;130m=[m [31m"<your name - Sorawis สรวิศ ソラヴィス>"[m;
+    [35mprintln![m([31m"{}"[m,name);[9;5H[34m//ex16[m
+    [38;5;130mstruct[m [36minfo[m
+    {
+    namae: [32mString[m,
+    Age: [32musize[m,
+    }[16;5H[34m//ex17[m
+    [38;5;130mfn[m [36mholyshit[m(omgomgomg: [32mchar[m, omgomg: [32mString[m) [38;5;130m->[m [32mi64[m
+    {[19;9H[38;5;130mfor[m x [38;5;130min[m omgomg.[36mchars[m(){[20;13H[38;5;130mif[m x [38;5;130m==[m omgomgomg{[21;17H[38;5;130mreturn[m x [38;5;130mas[m [32mi64[m;[22;13H}[23;9H}[24;9H[38;5;130mreturn[m [38;5;130m-[m[31m1[m;
+    }
+
+}[29;104H184,0-1[7CBot[28;1H[?25h[?25l[?1000l
+
+[32mW11: Warning: File "main.rs" has changed since editing started[m
+[32mSee ":help W11" for more info.[m
+[32m[O]K, (L)oad File, Load File (a)nd Options: [?25h[m[?1004l[?2004l[?1l>[>4;m[?1049l[23;0;0tVim: Caught deadly signal HUP
+Vim: Finished.
+[29;1H[23;2t[23;1t, Load File (a)nd Options: [m[?2004l[?1l>[>4;m[?1049l[23;0;0tVim: Caught deadly signal HUP
+Vim: preserving files...
+Vim: Finished.
+[29;1H[23;2t[23;1t
