@@ -154,8 +154,8 @@ impl fmt::Display for Coordinate {
 //Functions
 
 
-/*
-//This part is unused. 
+
+//This part is unused. But implemented nontheless.
 fn getcoordinate(mut k:Coordinate) -> String
 {
 	let mut first:char = ' ';
@@ -168,7 +168,7 @@ fn getcoordinate(mut k:Coordinate) -> String
 	else {second = 'W'; k.coordy = k.coordy*-1.0;}
 
 	format!("{:.3}{DEG} {first}, {:.3}{DEG} {second}", k.coordx, k.coordy)
-}*/
+}
 
 //This function reads json file then store values in a vector
 fn read_and_store() -> Vec<Types>
