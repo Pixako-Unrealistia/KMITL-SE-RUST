@@ -1,0 +1,50 @@
+{
+    {
+      "name": "Fortune_Teller",
+      "members": [
+        {
+          "name": "Generico Incognito",
+          "age": 103,
+          "location": {
+            "coordx": 14.34567,
+            "coordy": 100.45675
+          		},
+
+	  "moneyswindled": 999999.99
+        }
+    
+      ]
+    },
+	
+    {
+      "name": "Politician",
+      "members": [
+        {
+          	"name": "Mannof Mistree",
+          	"age": 33,
+          	"location": {
+            		"coordx": 14.34567,
+            		"coordy": 100.45675
+			},
+			"party" : "Green"
+          
+        }
+      ]
+    },
+	
+	{
+      "name": "Freelancer",
+      "members": [
+        {
+			"name": "Obb Libvious",
+			"age": 52,
+			"location": {
+				"coordx": 14.34567,
+				"coordy": 100.45675
+	  },
+			"jobsdone" : ["Pizza Cutter", "Grammar corrector", "Site Editor"]
+         
+        }
+      ]
+    }
+}
