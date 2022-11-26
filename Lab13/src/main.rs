@@ -44,8 +44,8 @@ fn read_and_store() -> [gps; DATA_SIZE]
         
         processed_array[i] = gps
         {
-        coordx : data[0].parse::<f64>().unwrap(),
-        coordy : data[1].parse::<f64>().unwrap(),
+        coordx : data[0].parse::<f64>().unwrap(), //[0] being the first index from data
+        coordy : data[1].parse::<f64>().unwrap(), //[1] being the second index from data
         };
         
         println!("{} {}", data[0], data[1]);
