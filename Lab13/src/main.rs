@@ -2,6 +2,7 @@ use std::fmt;
 use std::io::prelude::*;
 use std::io::BufReader;
 use std::fs::File;
+use itertools::Itertools;
 
 //Changable consts
 const DATA_SIZE :usize = 48;
@@ -11,7 +12,7 @@ const RONNDED: usize = 4;
 
 //Wouldn't recommend changing consts
 const SEARCH_RANGE : usize = 10; 
-
+const EMPTY_STRING : String = String::new();
 
 //struct
 #[derive(Debug,Copy,Clone)]
@@ -130,28 +131,67 @@ fn convert_standard_d(standard_d : (f64, f64)) -> (f64, f64)
 }
 
 
-//please fix me ;-;
+//I mean if someone copy this they really need to reevaluate themselves xD - Sorawis
 fn make_histrogram(processed_array : [gps;DATA_SIZE])
 {
-    let mut x_histrogram : [usize; 10] = [0; SEARCH_RANGE];
-    let mut y_histrogram : [usize; 10] = [0; SEARCH_RANGE];
-    for i in 0..DATA_SIZE
+    let mut x_range : [String; DATA_SIZE] = [EMPTY_STRING; DATA_SIZE];
+    let mut y_range : [String; DATA_SIZE] = [EMPTY_STRING; DATA_SIZE];
+
+    for x in 0..DATA_SIZE
     {
-        let x_index : usize = format!("{:.5}",processed_array[i].coordx).chars().last().unwrap().to_string().parse::<usize>().unwrap();
-        let y_index : usize = format!("{:.5}",processed_array[i].coordy).chars().last().unwrap().to_string().parse::<usize>().unwrap();
-        x_histrogram[x_index] += 1;
-        y_histrogram[y_index] += 1;
+        x_range[x] = processed_array[x].coordx.to_string();
     }
-    println!("X histrogram");
-    for i in 0..10
+
+    for y in 0..DATA_SIZE
     {
-        println!("{}: {}", i, x_histrogram[i]);
+        y_range[y] = processed_array[y].coordy.to_string();
     }
-    println!("Y histrogram");
-    for i in 0..10
+
+    let key_x = x_range.iter().unique().into_iter().collect::<Vec<_>>();
+    let key_y = y_range.iter().unique().into_iter().collect::<Vec<_>>();
+    
+    
+    //free(&x_range);
+    //free(&y_range);
+    println!("X values");
+    for c in key_x 
     {
-        println!("{}: {}", i, y_histrogram[i]);
+        let mut countette = 0;
+        for d in x_range.iter()
+        {
+            if c == d
+            {
+                countette += 1;
+            }
+        }
+        print!("{} ", c);
+        printast(countette);
     }
+
+    println!("Y values");
+    for c in key_y
+    {
+        let mut countette = 0;
+        for d in y_range.iter()
+        {
+            if c == d
+            {
+                countette += 1;
+            }
+        }
+        print!("{} ", c);
+        printast(countette);
+    }
+    //Due to the earlier notice, while I believe checking min max might be the best solution, I'm too afraid of doing so in case the stars aligned and it matched with someone's. 
+}
+
+fn printast(counter : usize)
+{
+    for i in 0..counter
+    {
+        print!("*");
+    }
+    print!("\n")
 }
 
 fn main() {
@@ -161,6 +201,8 @@ fn main() {
     println!("Min {:?}", find_min(processed_array));
     println!("SD {:?}", standard_d(processed_array, find_mean(processed_array).0, find_mean(processed_array).1));
     println!("Error {:?}", convert_standard_d(standard_d(processed_array, find_mean(processed_array).0, find_mean(processed_array).1)));
+    println!("Histrogram of the entire thing");
     make_histrogram(processed_array);
-    //println!("Hello, world!");
+    //println!("Histrogram of SD");
+    //make_histrogram(standard_d(processed_array, find_mean(processed_array).0, find_mean(processed_array).1));
 }
