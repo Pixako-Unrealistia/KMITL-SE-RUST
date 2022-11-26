@@ -6,7 +6,7 @@ use itertools::Itertools;
 
 //Changable consts
 const DATA_SIZE :usize = 48;
-const FILE_PATH : &str = "./GPSA.csv";
+const FILE_PATH : &str = "./GPSB.csv";
 const AMOUNT_OF_ELEMENTS : usize = 5;
 const RONNDED: usize = 4;
 
@@ -115,7 +115,7 @@ fn standard_d(processed_array : [gps;DATA_SIZE], x_mean : f64, y_mean : f64) -> 
     let mut y_summation : f64 = 0.0;
     for i in 0..DATA_SIZE - 1
     {
-        x_summation += (processed_array[i].coordx - x_mean).powf(2.0);
+        x_summation += (processed_array[i].coordx - x_mean).powf(2.0); //inaccordance to the equation
         y_summation += (processed_array[i].coordy - y_mean).powf(2.0);
     }
     ((x_summation / (DATA_SIZE as f64)).sqrt(), (y_summation / (DATA_SIZE as f64)).sqrt())
@@ -150,9 +150,6 @@ fn make_histrogram(processed_array : [gps;DATA_SIZE])
     let key_x = x_range.iter().unique().into_iter().collect::<Vec<_>>();
     let key_y = y_range.iter().unique().into_iter().collect::<Vec<_>>();
     
-    
-    //free(&x_range);
-    //free(&y_range);
     println!("X values");
     for c in key_x 
     {
