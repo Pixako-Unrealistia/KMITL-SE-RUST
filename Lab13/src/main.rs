@@ -5,10 +5,11 @@ use std::fs::File;
 use itertools::Itertools;
 
 //Changable consts
-const DATA_SIZE :usize = 48;
-const FILE_PATH : &str = "./GPSB.csv";
+const DATA_SIZE :usize = 48; //change here if you want to go b
+const FILE_PATH : &str = "./GPSA.csv"; //change here if you want to go b
+
 const AMOUNT_OF_ELEMENTS : usize = 5;
-const RONNDED: usize = 4;
+const ROUND_TO: usize = 5; //5 degits in this case
 
 //Wouldn't recommend changing consts
 const SEARCH_RANGE : usize = 10; 
@@ -139,12 +140,12 @@ fn make_histrogram(processed_array : [gps;DATA_SIZE])
 
     for x in 0..DATA_SIZE
     {
-        x_range[x] = processed_array[x].coordx.to_string();
+        x_range[x] = format!("{:.1$}" , processed_array[x].coordx, ROUND_TO); //format and round
     }
 
     for y in 0..DATA_SIZE
     {
-        y_range[y] = processed_array[y].coordy.to_string();
+        y_range[y] = format!("{:.1$}" , processed_array[y].coordy, ROUND_TO);
     }
 
     let key_x = x_range.iter().unique().into_iter().collect::<Vec<_>>();
